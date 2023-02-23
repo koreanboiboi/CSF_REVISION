@@ -1,0 +1,10 @@
+
+
+<div *ngFor="let g of gifs">
+    <h2>{{g.title}}</h2>
+    <a [href]="g.url">
+        <img [src]="g.imageUrl">
+    </a>
+    <h3>Rating: {{g.rating}}</h3>
+    <h3>Id: {{g.id}}</h3>
+</div>

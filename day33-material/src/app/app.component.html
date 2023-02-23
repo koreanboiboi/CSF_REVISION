@@ -1,0 +1,18 @@
+<mat-slide-toggle>test</mat-slide-toggle>
+
+<mat-toolbar color="primary">
+  <img src="/assets/bender.png" class="thumbnail">
+  <span>My First Material Application</span>
+</mat-toolbar>
+
+<app-user (onNewUser)="newUser($event)">
+  <div class="button-bar">
+    <button type="button" mat-raised-button color="warn" (click)="clearForm()">
+      <mat-icon>delete</mat-icon> Clear
+    </button>
+    <button type="button" mat-raised-button color="primary"
+        (click)="share()" [disabled]="!canShare">
+      <mat-icon>share</mat-icon> Share
+    </button>
+  </div>
+</app-user>
